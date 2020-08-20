@@ -4,7 +4,7 @@ const router = express.Router();
 
 const db = require("./data/dbConfig.js");
 
-router.get("/", async (req, res) => {
+router.get("/accounts/", async (req, res) => {
   const accounts = await db
     .select("*")
     .from("accounts")
