@@ -2,7 +2,7 @@ const express = require("express");
 
 const router = express.Router();
 
-const db = require("../data/dbConfig.js");
+const db = require("./data/dbConfig.js");
 
 router.get("/", async (req, res) => {
   const accounts = await db

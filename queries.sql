@@ -17,12 +17,15 @@ WHERE supplierId = 11;
 SELECT *
 FROM orders
 ORDER BY orderDate
-DESC LIMIT 10;
+DESC 
+LIMIT 10;
 
 -- Find all customers that live in London, Madrid, or Brazil
 
-SELECT * FROM customers
-WHERE city IN
+SELECT * 
+FROM customers
+WHERE city 
+IN
 ('London', 'Madrid', 'Brazil');
 
 -- Add a customer record for "The Shire", the contact name is "Bilbo Baggins" the address is -"1 Hobbit-Hole" in "Bag End", postal code "111" and the country is "Middle Earth"
